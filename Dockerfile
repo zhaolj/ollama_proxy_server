@@ -6,7 +6,7 @@ RUN apt update \
     && apt autoremove -y --purge \
     && apt clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
-    && git clone https://github.com/ParisNeo/ollama_proxy_server.git
+    && git clone https://github.com/zhaolj/ollama_proxy_server.git
 
 # Change working directory to cloned git repository
 WORKDIR ollama_proxy_server
